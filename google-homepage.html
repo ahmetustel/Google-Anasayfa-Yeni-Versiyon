@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      /**************************** SAĞ ÜSTTEKİ LİNKLERİN DİV'i **********************/
+      .top {
+        width: 100%;
+        height: 60px;
+        margin: 6px 6px 6px 6px;
+      }
+
+      .topright {
+        float: right;
+        width: 264px;
+        height: 48px;
+        padding: 0px 0px 0px 32px;
+        margin-right: 6px;
+        box-sizing: border-box;
+      }
+
+      .topright a {
+        text-decoration: none;
+      }
+
+      .topright a:hover {
+        text-decoration: underline;
+      }
+
+      .topright img {
+        border: 3px solid white;
+      }
+
+      #icon2:hover {
+        border: 3px solid #eff0f0;
+      }
+
+      #icon:hover {
+        color: rgb(239, 240, 240, 0.8);
+        z-index: 1;
+      }
+
+      .toprightclear {
+        clear: both;
+      }
+
+      /**************************** LOGONUN BULUNDUĞU DİV ***************************/
+      .image {
+        width: 100%;
+        height: 92px;
+        margin-top: 0;
+      }
+
+      .div_image {
+        margin-top: 198px;
+        height: 92px;
+      }
+
+      /**************************** SEARCH YAPILAN BLOĞUN KODU ***********************/
+      .search {
+        width: 100%;
+        height: 140px;
+        padding: 20px;
+      }
+
+      .searchbox {
+        width: 100%;
+        padding-top: 5px;
+      }
+
+      .arama_alan {
+        width: 100%;
+      }
+
+      #arama_alani {
+        background-image: url("magnifier.jpg"); /*önce icon arka plan yapılır*/
+        background-position: 10px 10px; /*bulunacağı yerdeki boyutu ayarlanır*/
+        background-repeat: no-repeat; /*tekrar etmez*/
+        padding: 0px 10px 0px 40px; /*iconun görülebilmesi için boşluk ayarlanır*/
+        border: 1px solid #dfe1e5;
+        border-radius: 20px;
+        margin: auto;
+        width: 480px;
+        height: 44px;
+        box-sizing: border-box;
+        font-size: 16px;
+        /* display: inline-block; */
+      }
+
+      .arama_alani:hover {
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      .arama_alani:focus {
+        border: 1px solid #dfe1e5;
+      }
+
+      .button {
+        margin: 0 auto;
+      }
+      /**************************** ARAMA BUTONUNUN OLDUĞU DİV ***********************/
+      .metin {
+        margin: 0 auto;
+      }
+
+      /**************************** FOOTER KISMI *************************************/
+      .footer {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <!-- ******************************************************************************************
+   **********************************************************************************************
+   **********************************************************************************************
+   ****************************************************************************************** -->
+  <body>
+    <!-- *************************** SAĞ ÜSTTEKİ LİNKLER ******************************-->
+    <div class="top">
+      <div class="topright">
+        <div style="padding: 14px 0 14px 15px; float: left; margin: auto">
+          <a
+            href="https://mail.google.com/mail/u/0/?ogbl"
+            style="color: #000000de; font: 13px arial, sans-serif"
+            >Gmail</a
+          >
+        </div>
+        <div style="padding: 14px 0 14px 15px; float: left; margin: auto">
+          <a
+            href="https://www.google.com.tr/imghp?hl=tr&authuser=0&ogbl"
+            style="color: #000000de; font: 13px arial, sans-serif"
+            >Görseller</a
+          >
+        </div>
+        <div
+          id="icon"
+          style="padding: 10px 0px 14px 14px; float: left; margin: auto"
+        >
+          <a
+            href="https://about.google/products/"
+            title="Google Uygulamaları"
+            style="padding: 14px 8px 14px 8px"
+            ><img
+              src="image/Adsız3.jpg"
+              alt="Profil Resmi"
+              style="border-radius: 100px; width: 23px; height: 23px"
+          /></a>
+        </div>
+        <div style="padding: 6px 4px 9px 4px; float: left; margin: auto">
+          <a href="#" title="Google Hesabı Ahmet USTEL ustelahmett@gmail.com"
+            ><img
+              id="icon2"
+              src="image/profilepic-2.jpg"
+              alt="Profil Resmi"
+              style="border-radius: 100px"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- *** CLEAR ÖZELLİĞİNİN TEMİZLENMESİ İÇİN -->
+    <div class="toprightclear"></div>
+
+    <!-- *************************** LOGONUN OLDUĞU BÖLÜM ***************************** -->
+    <div class="image" align="center">
+      <div class="div_image">
+        <img src="image/logo.png" alt="Google Logo" height="92" />
+      </div>
+    </div>
+
+    <!-- *** CLEAR ÖZELLİĞİNİN TEMİZLENMESİ İÇİN -->
+    <div class="toprightclear"></div>
+
+    <!-- *************************** SEARCH TEXT ve BUTTONLARIN OLDUĞU BÖLÜM*********** -->
+    <div class="search">
+      <!-- ********SEARCH TEXT BÖLÜMÜ********** -->
+      <div class="searchbox">
+        <div class="arama_alan" align="center">
+          <input type="text" name="arama" id="arama_alani" title="Ara" />
+        </div>
+        <div>
+          <label for="search">Arama Yapın</label>
+          <input
+            type="text"
+            name="arama"
+            id="search"
+            placeholder="Aranılacak kelimeyi girin veya URL yazın..."
+          />
+        </div>
+      </div>
+
+      <!-- ******* BUTONLARIN OLDUĞU BÖLÜM ************************** -->
+      <div class="button"></div>
+    </div>
+
+    <!-- **************************** DİLLER BÖLÜMÜ ORTADA **************************** -->
+    <div class="metin">
+      Google'de kullanabileceğiniz diğer diller: <a href="">English</a>
+    </div>
+
+    <!-- *************************** FOOTER KISMI ************************************* -->
+    <div class="footer">
+      <div class="footer1">Türkiye</div>
+      <div class="footer2">
+        <a href="">hakkında</a>
+        <a href="">Reklam</a>
+        <a href="">İşletme</a>
+        <a href="">Arama nasıl çalışır?</a>
+        <span>2007'den bu yana karbon nört</span>
+        <a href="">Gizlilik</a>
+        <a href="">Şartlar</a>
+        <a href="">Ayarlar</a>
+      </div>
+    </div>
+  </body>
+</html>

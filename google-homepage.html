@@ -64,6 +64,7 @@
       }
 
       /**************************** SEARCH YAPILAN BLOĞUN KODU ***********************/
+      /******* SEARCH TEXT BÖLÜMÜ ********/
       .search {
         width: 100%;
         height: 140px;
@@ -111,10 +112,28 @@
         outline: none;
       }
 
-      .button {
-        margin: 0 auto;
+      /******* BUTTON BÖLÜMÜ ********/
+      .button_area {
+        width: 100%;
+        padding-top: 18px;
       }
-      /**************************** ARAMA BUTONUNUN OLDUĞU DİV ***********************/
+
+      .button_alani {
+        margin-left: 33.8%;
+        width: 582px;
+        height: 58px;
+        box-sizing: border-box;
+      }
+
+      .button {
+        border: 1px solid #f2f2f2; /*ÖDEVDE VERİLEN GÖREV*/
+        font: 14 arial, sans-serif; /*ÖDEVDE VERİLEN GÖREV*/
+        color: #5f6368; /*ÖDEVDE VERİLEN GÖREV*/
+        height: 36px; /*ÖDEVDE VERİLEN GÖREV*/
+      }
+
+      /**************************** DİĞER DİLLER BÖLÜMÜ *******************************/
+
       .metin {
         margin: 0 auto;
       }
@@ -210,7 +229,24 @@
       </div>
 
       <!-- ******* BUTONLARIN OLDUĞU BÖLÜM ************************** -->
-      <div class="button"></div>
+      <div class="button_area">
+        <div class="button_alani">
+          <center>
+            <input
+              class="button"
+              type="submit"
+              value="Google'de Ara"
+              style="margin: 11px 4px; padding: 0px 16px"
+            />
+            <input
+              class="button"
+              type="submit"
+              value="Kendimi Şanslı Hissediyorum"
+              style="margin: 11px 4px; padding: 0px 16px"
+            />
+          </center>
+        </div>
+      </div>
     </div>
 
     <!-- **************************** DİLLER BÖLÜMÜ ORTADA **************************** -->
